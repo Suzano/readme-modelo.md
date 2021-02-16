@@ -109,6 +109,13 @@ Para criar uma lista não ordenada, adicione travessões (-), asteriscos (*) ou 
      - Item recuado
 - Quarto item
 
+## Listas de tarefas
+Para criar uma lista de tarefas, adicione travessões (-), espaço e colchetes ([ ]).
+
+- [ ] Primeiro item
+- [ ] Segundo item
+- [x] Terceiro item
+- [ ] Quarto item
 ## Adicionando Elementos em Listas
 Para adicionar outro elemento em uma lista enquanto preserva a continuidade da lista, indente o elemento quatro espaços ou uma tabulação, como mostrado nos exemplos a seguir.
 
