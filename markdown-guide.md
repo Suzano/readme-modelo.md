@@ -69,84 +69,207 @@ Citações em bloco podem conter vários parágrafos. Adicione um> nas linhas em
 >
 > A Bruxa mandou que ela limpasse os potes e chaleiras e varrasse o chão e mantivesse o fogo alimentado com lenha.
 
+## Citações em bloco aninhados
+Citações em bloco podem ser aninhados. Adicione um >> na frente do parágrafo que deseja aninhar.
+
+> Dorothy a seguiu por muitas das belas salas de seu castelo.
+>
+>> A Bruxa mandou que ela limpasse os potes e chaleiras e varrasse o chão e mantivesse o fogo alimentado com lenha.
+
+## Citações em bloco com outros elementos
+Citações em bloco podem conter outros elementos formatados em Markdown. Nem todos os elementos podem ser usados - você precisará experimentar para ver quais funcionam.
+
+> #### Os resultados trimestrais estão ótimos!
+>
+> - A receita estava fora do gráfico.
+> - Os lucros foram maiores do que nunca.
+>
+> *Tudo* está indo de acordo com o **plano**.
+
+# Listas
+Você pode organizar itens em listas ordenadas e não ordenadas.
+
+## Listas Ordenadas
+Para criar uma lista ordenada, adicione itens de linha com números seguidos de pontos. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número um.
+
+1. Primeiro item
+2. Segundo item
+3. Terceiro item
+     1. Item recuado
+     2. Item recuado
+4. Quarto item
+
+## Listas não ordenadas
+Para criar uma lista não ordenada, adicione travessões (-), asteriscos (*) ou sinais de adição (+) na frente dos itens de linha. Recue um ou mais itens para criar uma lista aninhada.
+
+- Primeiro item
+- Segundo item
+- Terceiro item
+     - Item recuado
+     - Item recuado
+- Quarto item
+
+## Adicionando Elementos em Listas
+Para adicionar outro elemento em uma lista enquanto preserva a continuidade da lista, indente o elemento quatro espaços ou uma tabulação, como mostrado nos exemplos a seguir.
+
+### Parágrafos
+* Este é o primeiro item da lista.
+* Aqui está o segundo item da lista.
+
+    Preciso adicionar outro parágrafo abaixo do segundo item da lista.
+
+* E aqui está o terceiro item da lista.
+
+### Citações em bloco
+* Este é o primeiro item da lista.
+* Aqui está o segundo item da lista.
+
+     > Um blockquote ficaria ótimo abaixo do segundo item da lista.
+
+* E aqui está o terceiro item da lista.
+
+### Blocos de Código
+Os blocos de código são normalmente recuados quatro espaços ou uma guia. Quando eles estiverem em uma lista, recue oito espaços ou duas tabulações.
+
+1. Abra o arquivo.
+2. Encontre o seguinte bloco de código na linha 21:
+
+        <html>
+            <head>
+                <title> Teste </title>
+            </head>
+
+3. Atualize o título para corresponder ao nome do seu site.
+
+### Imagens
+
+1. Abra o arquivo que contém o mascote do Linux.
+2. Maravilhe-se com sua beleza.
+
+    ![Tux, o mascote do Linux](/markdown-guide/tux.png)
+
+3. Feche o arquivo. 
+
+### Listas
+Você pode aninhar uma lista não ordenada em uma lista ordenada ou vice-versa.
+
+1. Primeiro item
+2. Segundo item
+3. Terceiro item
+    - Item recuado
+    - Item recuado
+4. Quarto item
+
+# Código
+Para denotar uma palavra ou frase como código, coloque-a entre crases (`).
+
+No prompt de comando, digite `nano`.
+
+## Escapando Backticks
+Se a palavra ou frase que você deseja denotar como código inclui um ou mais crases, você pode fazer o escape colocando a palavra ou frase entre crases duplos (``).
+
+`` Use `code` em seu arquivo Markdown``
+
+## Blocos de Código
+Para criar blocos de código, indente cada linha do bloco em pelo menos quatro espaços ou uma tabulação.
+
+    <html>
+        <head>
+        </head>
+    </html>
+
+# Regras horizontais
+Para criar uma régua horizontal, use três ou mais asteriscos (***), travessões (---) ou sublinhados (___) em uma linha.
+
+***
+---
+___
+
+# Links
+Para criar um link, coloque o texto do link entre colchetes (por exemplo, [texto link]) e siga-o imediatamente com o URL entre parênteses (por exemplo, (https://duckduckgo.com)).
+
+Meu mecanismo de pesquisa favorito é [Duck Duck Go] (https://duckduckgo.com).
+
+# Adicionando Títulos
+Você pode opcionalmente adicionar um título para um link. Isso aparecerá como uma dica de ferramenta quando o usuário passar o mouse sobre o link. Para adicionar um título, coloque-o entre parênteses após o URL.
+
+Meu mecanismo de pesquisa favorito é [Duck Duck Go](https://duckduckgo.com "O melhor mecanismo de pesquisa para privacidade").
+
+# URLs e endereços de e-mail
+Para transformar rapidamente um URL ou endereço de e-mail em um link, coloque-o entre colchetes angulares.
+
+<https://www.markdownguide.org>
+
+<fake@example.com>
+
+# Links de formatação
+Para enfatizar os links, adicione asteriscos antes e depois dos colchetes e parênteses. Para denotar links como código, adicione crases entre colchetes.
+
+Eu amo apoiar a **[EFF](https://eff.org)**.
+
+Este é o *[Guia de marcação](https://www.markdownguide.org)*.
+
+Veja a seção em [`código`](#código).
+
+# Links de estilo de referência
+Os links de estilo de referência são um tipo especial de link que torna os URLs mais fáceis de exibir e ler no Markdown. Os links de estilo de referência são construídos em duas partes: a parte que você mantém alinhada com o seu texto e a parte que você armazena em algum outro lugar do arquivo para manter o texto fácil de ler.
+
+## Imagens
+Para adicionar uma imagem, adicione um ponto de exclamação (!), Seguido pelo texto alternativo entre colchetes e o caminho ou URL para o recurso de imagem entre parênteses. Você pode opcionalmente adicionar um título após o URL entre parênteses.
+
+![Jardins mágicos da Filadélfia. Este lugar era tão legal!](/markdown-guide/philly-magic-garden.jpg "Jardins mágicos da Filadélfia")
+
+## Vinculando Imagens
+Para adicionar um link a uma imagem, coloque o Markdown da imagem entre colchetes e, a seguir, adicione o link entre parênteses.
+
+[![Uma velha rocha no deserto](/markdown-guide/shiprock.jpg "Shiprock, Novo México por Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+
+# Personagens em fuga
+Para exibir um caractere literal que seria usado para formatar texto em um documento Markdown, adicione uma barra invertida (\) na frente do caractere.
+
+\* Sem a barra invertida, isso seria um marcador em uma lista não ordenada.
+
+# Tabelas
+Para adicionar uma tabela, use três ou mais hifens (---) para criar o cabeçalho de cada coluna e use barras verticais (|) para separar cada coluna. Opcionalmente, você pode adicionar tubos em qualquer extremidade da tabela.
+
+| Sintaxe | Descrição |
+| ----------- | ----------- |
+| Cabeçalho | Título |
+| Parágrafo | Texto |
+
+## Alinhamento
+Você pode alinhar o texto nas colunas à esquerda, à direita ou ao centro adicionando dois-pontos (:) à esquerda, à direita ou em ambos os lados dos hifens na linha do cabeçalho.
+
+| Sintaxe | Descrição | Texto de teste |
+| :--- | :----: | ---: |
+| Cabeçalho | Título | Aqui está |
+| Parágrafo | Texto | E mais |
+
+# Caracter que você pode escapar
+Você pode usar uma barra invertida para escapar dos caracteres a seguir.
+
+| Carater | Nome |
+| :-----: | :---- |
+| \ | barra invertida |
+| ` | crase |
+| * | asterisco |
+| _ | sublinhado |
+| {} | chaves |
+| [] | colchetes |
+| <> | colchetes angulares |
+| () | parênteses |
+| # | sinal de libra |
+| + | sinal de mais |
+| - | sinal de menos (hífen) |
+| . | ponto |
+| ! | ponto de exclamação |
+| \| | tubo (veja também tubo de escape nas tabelas) |
 
 
+# Comentários
+Você pode inserir comentários em seu arquivo, utilizando dos (\<!---) para iniciar o cometário e (--->) no final do comentário.
 
+<!--- Este é um comentário e não deve ser exibido no corpo do arquivo.--->
 
-
-
-
-
-
-
-
-<!--- Estes são exemplos. Veja https://shields.io para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui --->
-
-
-Este projeto é um `<utilitário\ferramenta\recurso>` que permite `<inserir\alvo\publico>` para fazer `<ação\tarefa>`.
-
-Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 frases. Não exagere, as pessoas não vão ler.
-
-## Pré-requisitos
-
-Before you begin, ensure you have met the following requirements:
-<!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
-
-## Instalando <nome_projeto>
-
-Para instalar o <nome_projeto>, siga estas etapas:
-
-Linux e macOS:
-```
-<comando_instalacao>
-```
-Windows:
-```
-<comando_instalacao>
-```
-## Usando <nome_projeto>
-
-Para usar <nome_projeto>, siga estas etapas:
-
-```
-<examplo_de_uso>
-```
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
-
-## Contribuindo para <nome_projeto>
-<!--- Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado --->
-
-Para contribuir com <nome_projeto>, siga estas etapas:
-
-1. Faça um Fork deste repositório.
-2. Crie um branch: `git checkout -b <branch_name>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<commit_message>'`
-4. Envie para o branch original: `git push origin <project_name> / <location>`
-5. Crie a solicitação de pull.
-
-Como alternativa, consulte a documentação do GitHub em [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## Contribuidores
-
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
-
-* [@suzano](https://github.com/suzano) 📖
-
-Você pode querer considerar o uso de algo como a especificação [todos os contribuidores](https://github.com/all-contributors/all-contributors) e sua [emoji chave](https://allcontributors.org/docs/en/emoji-key).
-
-## Contato
-
-Se você quiser entrar em contato comigo, você pode me encontrar em <suzanobitencourt@gmail.com>.
-
-## Licença
-<!--- Se você não tiver certeza de qual licença aberta usar, consulte https://choosealicense.com/--->
-
-Este projeto usa a seguinte licença: [MIT License](<https://choosealicense.com/licenses/mit/>).
-
-/github/license/:user/:repo
-
-## Fonte
-https://github.com/scottydocs/README-template.md
+# Fonte
+https://www.markdownguide.org/basic-syntax
